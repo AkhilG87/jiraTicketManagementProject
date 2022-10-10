@@ -1,0 +1,168 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.toolbox {
+  background-color: #3d3d3d;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+}
+.toolbox > * {
+  margin-left: 4rem;
+}
+.tb-priority {
+  height: 3rem;
+  width: 16rem;
+  background-color: #4b4b4b;
+  justify-content: space-evenly;
+  align-items: center;
+  display: flex;
+  border-radius: 0.5rem;
+}
+.action-btn {
+  display: flex;
+}
+.action-btn > * {
+  height: 3rem;
+  width: 4rem;
+  background-color: #4b4b4b;
+  /* border-radius: 0.5rem; */
+}
+.action-btn > * {
+  /* width: 50%; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: aliceblue;
+}
+.action-btn > * :hover {
+  background-color: #485460;
+}
+.color {
+  height: 2rem;
+  width: 3rem;
+  background-color: lightgoldenrodyellow;
+  border-radius: 0.5rem;
+}
+.lightblue {
+  background-color: lightblue;
+}
+.lightpink {
+  background-color: lightpink;
+}
+.lightgreen {
+  background-color: lightgreen;
+}
+.black {
+  background-color: black;
+}
+.modal {
+  height: 50vh;
+  width: 45vw;
+  background-color: antiquewhite;
+  position: absolute;
+  left: calc((100vw - 45vw) / 2);
+  top: calc((100vh - 50vh) / 2);
+  display: flex;
+  display: none;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+.notes {
+  width: 75%;
+  border: none;
+  outline: none;
+  background-color: #d2dae2;
+  padding: 2rem;
+  font-size: 1.5rem;
+}
+.pallate {
+  height: 100%;
+  width: 25%;
+  background-color: #4b4b4b;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.colors {
+  height: 10%;
+  width: 80%;
+}
+.border {
+  border: 3px solid white;
+}
+.ticket {
+  height: 13rem;
+  width: 16rem;
+  background-color: #f1f2f6;
+}
+.ticketcolor {
+  height: 1rem;
+}
+.ticketid {
+  height: 2rem;
+  padding: 0.4rem;
+}
+.taskarea {
+  height: calc(100% - 1rem - 2rem - 2rem);
+  padding: 0.4rem;
+  overflow: auto;
+  outline: none;
+}
+.lock {
+  display: flex;
+  justify-content: end;
+  font-size: 1.5rem;
+  height: 2rem;
+  padding-right: 1rem;
+  padding-bottom: 2rem;
+  color: #a5b1c2;
+}
+.main-cont {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem;
+  gap: 2rem;
+  justify-content: center;
+}
+@media screen and (max-width: 425px) {
+  .color {
+    width: 1.7rem;
+    height: 1.7rem;
+  }
+  .toolbox > * {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+  .modal {
+    height: 300px;
+    width: 420px;
+    position: absolute;
+    left: calc((425px - 420px) / 2);
+    top: calc((100vh - 300px) / 2);
+  }
+}
+@media screen and (max-width: 375px) {
+  .color {
+    width: 1rem;
+    height: 1rem;
+  }
+  .toolbox > div {
+    margin-left: 1rem;
+    margin-right: -1rem;
+  }
+  .toolbox > :nth-last-child() {
+    margin-left: 30px;
+    margin-right: 10px;
+  }
+  .modal {
+    height: 300px;
+    width: 360px;
+    position: absolute;
+    left: calc((375px - 360px) / 2);
+    top: calc((100vh - 300px) / 2);
+  }
+}

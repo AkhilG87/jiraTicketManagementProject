@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jira Ticket Clone</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- Tool Box  -->
+    
+    <div class="toolbox">
+      <div class="tb-priority">
+        <div class="color lightblue"></div>
+        <div class="color lightgreen"></div>
+        <div class="color lightpink"></div>
+        <div class="color black"></div>
+      </div>
+      <div class="action-btn">
+        <div class="addbtn"><i class="fa-solid fa-plus"></i></div>
+        <div class="rmvbtn">
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+      </div>
+    </div>
+    <!-- Main  -->
+
+    <div class="main-cont"></div>
+
+    <!-- modal  -->
+
+    <div class="modal">
+      <textarea class="notes" spellcheck="false"></textarea>
+      <div class="pallate">
+        <div class="colors lightblue border"></div>
+        <div class="colors lightgreen border"></div>
+        <div class="colors lightpink border"></div>
+        <div class="colors black border"></div>
+      </div>
+    </div>
+    <script src="https://unpkg.com/shortid-dist@1.0.5/dist/shortid-2.2.13.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
